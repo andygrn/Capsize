@@ -120,5 +120,5 @@ background-image{
 becomes this CSS...
 
 ```css
-*{border:0 none}img{border:2px solid #666}.class{border:2px dashed #f0f;padding:10px}body{margin:20px;font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#333}p{margin:10px}ul{margin:10px}ol{margin:10px}blockquote{margin:10px}h1{margin:20px 0;font-size:48px;font-weight:bold;letter-spacing:-0.07em}#id{margin:36px 0 0 24px;padding:20px;font-size:24px;background-color:rgba(0,0,0,0.5)}.element[href^='http{color://']}li a{color:#c2cef4}
+*{border:0 none}img{border:2px solid #666}.class{border:2px dashed #f0f;padding:10px}body{margin:20px;font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#333}p{margin:10px}ul{margin:10px}ol{margin:10px}blockquote{margin:10px}h1{margin:20px 0;font-size:48px;font-weight:bold;letter-spacing:-0.07em}#id{margin:36px 0 0 24px;padding:20px;font-size:24px;background-color:rgba(0,0,0,0.5)}.element[href^='http://']{color:#d40aff}li a{color:#c2cef4}
 ```

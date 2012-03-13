@@ -16,7 +16,8 @@ Capsize.parse = function ( input ){
 	var output = {};
 	var buffer;
 	var rule;
-	var declaration;
+	var declaration = [];
+	var pivot;
 	var selectors;
 	var i;
 	var j;
@@ -41,7 +42,9 @@ Capsize.parse = function ( input ){
 		buffer = {};
 
 		for ( j = 0; j < rule[1].length; j += 1 ){
-			declaration = rule[1][j].split( ':' );
+			pivot = rule[1][j].lastIndexOf( ':' );
+			declaration[0] = rule[1][j].substring( 0, pivot );
+			declaration[1] = rule[1][j].substring( pivot + 1 );
 			selectors = declaration[0].split( ',' ); // Split multiple selectors
 			for ( k = 0; k < selectors.length; k += 1 ){
 				selectors[k] = this.trim( selectors[k] );
